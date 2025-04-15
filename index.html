@@ -1,8 +1,283 @@
-<div> 
-  <h1> Elvis's page of interest </h1>
-  <h3> in <b> this page </b> contains <b> <em> Elvis's likes </b> and dislikes </h3>
-   </div>
-<div>
-  <h2> What is your favourite car? </h2>
-  <a>mr beast is my favorite youtuber </a>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Afrique - The Africa Exploration Journal</title>
+    <style>
+        .banner-container {
+            width: 100%;
+            max-width: 100%; /* Full width */
+            margin: 0 auto;
+            background: #f8f5f2;
+            padding: 2rem 1rem; /* Reduced height */
+            text-align: center;
+            position: relative;
+            border-bottom: 1px solid #e0d6cc;
+        }
+        
+        .brand-name {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 3.2rem;
+            font-weight: 600;
+            color: #2a2a2a;
+            margin-bottom: 0;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .brand-name:after {
+            content: "";
+            position: absolute;
+            bottom: -8px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 2px;
+            background: #d4a259;
+        }
+        
+        .tagline {
+            font-family: 'Proxima Nova', 'Helvetica Neue', sans-serif;
+            font-size: 1rem;
+            color: #555;
+            font-weight: 400;
+            max-width: 500px;
+            margin: 1rem auto 0;
+            line-height: 1.4;
+        }
+        
+        @media (max-width: 768px) {
+            .brand-name {
+                font-size: 2.2rem;
+            }
+            .tagline {
+                font-size: 0.9rem;
+                max-width: 300px;
+            }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="banner-container">
+        <h1 class="brand-name">JUSTT AFRICA</h1>
+        <p class="tagline">Exploring Africa's essence</p>
+    </div>
   
+  
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Afrique - Exploring Africa's Stories</title>
+    <style>
+        /* ===== Global Styles ===== */
+        :root {
+            --primary: #e1a730;
+            --dark: #2a2a2a;
+            --light: #f8f5f2;
+            --text: #555;
+            --border: #e0d6cc;
+        }
+        
+        body {
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background-color: white;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* ===== Page Brief ===== */
+        .page-brief {
+            padding: 3rem 0;
+            background-color: var(--light);
+        }
+        
+        .brief-title {
+            font-family: 'Playfair Display', serif;
+            color: var(--dark);
+            text-align: center;
+            margin-bottom: 2rem;
+            font-size: 2rem;
+        }
+        
+        .brief-points {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .point-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .point-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .card-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .card-content {
+            padding: 1.5rem;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .point-title {
+            color: var(--dark);
+            font-weight: 600;
+            margin-top: 0;
+            display: flex;
+            align-items: center;
+            font-size: 1.2rem;
+        }
+        
+        .point-title i {
+            margin-right: 10px;
+            color: var(--primary);
+        }
+        
+        .btn {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            padding: 0.6rem 1.2rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: auto;
+            align-self: flex-start;
+            transition: background 0.3s ease;
+            border: none;
+            cursor: pointer;
+            font-family: inherit;
+            font-size: 0.9rem;
+        }
+        
+        .btn:hover {
+            background: #c8952b;
+            color: white;
+        }
+        
+        /* ===== Responsive ===== */
+        @media (max-width: 768px) {
+            .brief-points {
+                grid-template-columns: 1fr;
+            }
+            
+            .card-image {
+                height: 150px;
+            }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <section class="page-brief">
+        <div class="container">
+            <h2 class="brief-title">Discover Africa With Us</h2>
+            <div class="brief-points">
+                <!-- African Cuisine -->
+                <div class="point-card">
+                    <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="African cuisine" class="card-image">
+                    <div class="card-content">
+                        <h3 class="point-title">
+                            <i class="fas fa-utensils"></i>
+                            Culinary Exploration
+                        </h3>
+                        <p>From Moroccan tagines to Nigerian jollof rice, discover Africa's vibrant food culture and traditional cooking methods.</p>
+                        <a href="cuisine.html" class="btn">Explore Cuisine</a>
+                    </div>
+                </div>
+                
+                <!-- African Economy -->
+                <div class="point-card">
+                    <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="African market" class="card-image">
+                    <div class="card-content">
+                        <h3 class="point-title">
+                            <i class="fas fa-chart-line"></i>
+                            Economic Growth
+                        </h3>
+                        <p>Explore Africa's emerging markets, tech hubs, and the entrepreneurial spirit driving continental development.</p>
+                        <a href="economy.html" class="btn">Learn About Economy</a>
+                    </div>
+                </div>
+                
+                <!-- African Wildlife -->
+                <div class="point-card">
+                    <img src="https://images.unsplash.com/photo-1504173010664-32509aeebb62?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="African wildlife" class="card-image">
+                    <div class="card-content">
+                        <h3 class="point-title">
+                            <i class="fas fa-paw"></i>
+                            Wildlife & Conservation
+                        </h3>
+                        <p>Journey through Africa's diverse ecosystems and learn about conservation efforts protecting its unique wildlife.</p>
+                        <a href="wildlife.html" class="btn">Discover Wildlife</a>
+                    </div>
+                </div>
+                
+                <!-- African Culture -->
+                <div class="point-card">
+                    <img src="https://images.unsplash.com/photo-1544531586-fde5298cdd40?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="African culture" class="card-image">
+                    <div class="card-content">
+                        <h3 class="point-title">
+                            <i class="fas fa-music"></i>
+                            Cultural Heritage
+                        </h3>
+                        <p>Immerse yourself in Africa's rich traditions, from ancient rituals to contemporary art movements.</p>
+                        <a href="culture.html" class="btn">Experience Culture</a>
+                    </div>
+                </div>
+                
+                <!-- African Innovation -->
+                <div class="point-card">
+                    <img src="https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="African innovation" class="card-image">
+                    <div class="card-content">
+                        <h3 class="point-title">
+                            <i class="fas fa-lightbulb"></i>
+                            Tech & Innovation
+                        </h3>
+                        <p>Discover how Africa's tech revolution is solving local challenges and creating global impact.</p>
+                        <a href="innovation.html" class="btn">See Innovation</a>
+                    </div>
+                </div>
+                
+                <!-- African Landscapes -->
+                <div class="point-card">
+                    <img src="https://images.unsplash.com/photo-1464037866556-6812c9d1c72e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="African landscapes" class="card-image">
+                    <div class="card-content">
+                        <h3 class="point-title">
+                            <i class="fas fa-mountain"></i>
+                            Natural Wonders
+                        </h3>
+                        <p>From the Sahara to Table Mountain, explore Africa's breathtaking landscapes and geological marvels.</p>
+                        <a href="landscapes.html" class="btn">View Landscapes</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+  </html>
