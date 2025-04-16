@@ -1,4 +1,3 @@
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -66,218 +65,141 @@
     </div>
   
   
-    <!DOCTYPE html>
+    
+  <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Afrique - Exploring Africa's Stories</title>
+    <title>Protecting African Elephants</title>
     <style>
-        /* ===== Global Styles ===== */
-        :root {
-            --primary: #e1a730;
-            --dark: #2a2a2a;
-            --light: #f8f5f2;
-            --text: #555;
-            --border: #e0d6cc;
-        }
-        
+        /* Global Styles */
         body {
             font-family: 'Open Sans', sans-serif;
             line-height: 1.6;
-            color: var(--text);
-            background-color: white;
+            color: #555;
+            background-color: #f8f5f2; /* Light background to match the site */
             margin: 0;
             padding: 0;
         }
-        
+
         .container {
-            max-width: 1200px;
+            max-width: 1000px;
             margin: 0 auto;
-            padding: 0 20px;
-        }
-        
-        /* ===== Page Brief ===== */
-        .page-brief {
-            padding: 3rem 0;
-            background-color: var(--light);
-        }
-        
-        .brief-title {
-            font-family: 'Playfair Display', serif;
-            color: var(--dark);
-            text-align: center;
-            margin-bottom: 2rem;
-            font-size: 2rem;
-        }
-        
-        .brief-points {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-        }
-        
-        .point-card {
-            background: white;
+            padding: 2rem;
+            background-color: white;
             border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 2px 15px rgba(0,0,0,0.1);
-            transition: transform 0.3s ease;
-            display: flex;
-            flex-direction: column;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         }
-        
-        .point-card:hover {
-            transform: translateY(-5px);
+
+        h1 {
+            text-align: center;
+            color: #2a2a2a;
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
         }
-        
-        .card-image {
+
+        p {
+            font-size: 1.1rem;
+            color: #555;
+            margin-bottom: 1.5rem;
+        }
+
+        img {
             width: 100%;
-            height: 200px;
-            object-fit: cover;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 1.5rem;
         }
-        
-        .card-content {
-            padding: 1.5rem;
-            flex-grow: 1;
-            display: flex;
-            flex-direction: column;
-        }
-        
-        .point-title {
-            color: var(--dark);
-            font-weight: 600;
-            margin-top: 0;
-            display: flex;
-            align-items: center;
-            font-size: 1.2rem;
-        }
-        
-        .point-title i {
-            margin-right: 10px;
-            color: var(--primary);
-        }
-        
+
         .btn {
             display: inline-block;
-            background: var(--primary);
+            background: #e1a730;
             color: white;
             padding: 0.6rem 1.2rem;
             border-radius: 4px;
             text-decoration: none;
             font-weight: 600;
-            margin-top: auto;
-            align-self: flex-start;
-            transition: background 0.3s ease;
-            border: none;
-            cursor: pointer;
-            font-family: inherit;
-            font-size: 0.9rem;
+            margin-top: 2rem;
+            text-align: center;
         }
-        
+
         .btn:hover {
             background: #c8952b;
-            color: white;
         }
-        
-        /* ===== Responsive ===== */
-        @media (max-width: 768px) {
-            .brief-points {
-                grid-template-columns: 1fr;
-            }
-            
-            .card-image {
-                height: 150px;
-            }
+
+        .subheading {
+            font-size: 1.4rem;
+            color: #2a2a2a;
+            margin-top: 2rem;
+        }
+
+        .quote {
+            font-size: 1.2rem;
+            font-style: italic;
+            background-color: #f8f5f2;
+            padding: 1rem;
+            border-left: 5px solid #e1a730;
+            margin: 2rem 0;
+        }
+
+        .quote p {
+            margin: 0;
+        }
+
+        .image-gallery {
+            display: flex;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .image-gallery img {
+            width: 32%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .content-section {
+            margin-bottom: 3rem;
         }
     </style>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <section class="page-brief">
-        <div class="container">
-            <h2 class="brief-title">Discover Africa With Us</h2>
-            <div class="brief-points">
-                <!-- African Cuisine -->
-                <div class="point-card">
-                    <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="African cuisine" class="card-image">
-                    <div class="card-content">
-                        <h3 class="point-title">
-                            <i class="fas fa-utensils"></i>
-                            Culinary Exploration
-                        </h3>
-                        <p>From Moroccan tagines to Nigerian jollof rice, discover Africa's vibrant food culture and traditional cooking methods.</p>
-                        <a href="cuisine.html" class="btn">Explore Cuisine</a>
-                    </div>
-                </div>
-                
-                <!-- African Economy -->
-                <div class="point-card">
-                    <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="African market" class="card-image">
-                    <div class="card-content">
-                        <h3 class="point-title">
-                            <i class="fas fa-chart-line"></i>
-                            Economic Growth
-                        </h3>
-                        <p>Explore Africa's emerging markets, tech hubs, and the entrepreneurial spirit driving continental development.</p>
-                        <a href="economy.html" class="btn">Learn About Economy</a>
-                    </div>
-                </div>
-                
-                <!-- African Wildlife -->
-                <div class="point-card">
-                    <img src="https://images.unsplash.com/photo-1504173010664-32509aeebb62?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="African wildlife" class="card-image">
-                    <div class="card-content">
-                        <h3 class="point-title">
-                            <i class="fas fa-paw"></i>
-                            Wildlife & Conservation
-                        </h3>
-                        <p>Journey through Africa's diverse ecosystems and learn about conservation efforts protecting its unique wildlife.</p>
-                        <a href="wildlife.html" class="btn">Discover Wildlife</a>
-                    </div>
-                </div>
-                
-                <!-- African Culture -->
-                <div class="point-card">
-                    <img src="https://images.unsplash.com/photo-1544531586-fde5298cdd40?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="African culture" class="card-image">
-                    <div class="card-content">
-                        <h3 class="point-title">
-                            <i class="fas fa-music"></i>
-                            Cultural Heritage
-                        </h3>
-                        <p>Immerse yourself in Africa's rich traditions, from ancient rituals to contemporary art movements.</p>
-                        <a href="culture.html" class="btn">Experience Culture</a>
-                    </div>
-                </div>
-                
-                <!-- African Innovation -->
-                <div class="point-card">
-                    <img src="https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="African innovation" class="card-image">
-                    <div class="card-content">
-                        <h3 class="point-title">
-                            <i class="fas fa-lightbulb"></i>
-                            Tech & Innovation
-                        </h3>
-                        <p>Discover how Africa's tech revolution is solving local challenges and creating global impact.</p>
-                        <a href="innovation.html" class="btn">See Innovation</a>
-                    </div>
-                </div>
-                
-                <!-- African Landscapes -->
-                <div class="point-card">
-                    <img src="https://images.unsplash.com/photo-1464037866556-6812c9d1c72e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="African landscapes" class="card-image">
-                    <div class="card-content">
-                        <h3 class="point-title">
-                            <i class="fas fa-mountain"></i>
-                            Natural Wonders
-                        </h3>
-                        <p>From the Sahara to Table Mountain, explore Africa's breathtaking landscapes and geological marvels.</p>
-                        <a href="landscapes.html" class="btn">View Landscapes</a>
-                    </div>
-                </div>
-            </div>
+    <div class="container">
+        <!-- Blog Cover Image -->
+        
+
+        <h1>Protecting the Majestic African Elephant</h1>
+        
+        <div class="content-section">
+            <h2 class="subheading">Why Elephants Matter</h2>
+            <p>The African elephant, *Loxodonta africana*, is one of the most important species in Africa’s ecosystem. These magnificent creatures play a pivotal role in shaping the environment they inhabit. From their tree-damaging behavior, which allows other species to thrive, to their role in creating watering holes, elephants help maintain the delicate balance of Africa’s ecosystems. But their existence is under threat, and urgent action is required to protect them.</p>
+            <p>Elephants are also known for their high intelligence and social structures, which are complex and similar to those of humans. Their emotional intelligence is remarkable, with elephants demonstrating behaviors such as mourning their dead and showing empathy toward others in their herd. With such intelligence and social bonds, elephants are not just iconic animals but symbols of Africa’s wild beauty.</p>
         </div>
-    </section>
+
+        <div class="quote">
+            <p>"The African elephant is not just a symbol of Africa’s wild beauty; it’s a cornerstone of the ecosystem, without which many other species would not survive."</p>
+        </div>
+
+        <div class="content-section">
+            <h2 class="subheading">The Threats They Face</h2>
+            <p>Despite their significance, African elephants face numerous challenges, primarily due to human activities. The illegal ivory trade is one of the most severe threats to elephants, as poachers kill them for their tusks, which are highly valuable on the black market. In addition, elephant habitats are being rapidly destroyed due to deforestation and human settlement, forcing elephants into smaller, more dangerous spaces.</p>
+            <p>In Africa, the annual rate of elephant poaching has been estimated at 20,000 elephants per year. The reasons for this are multifaceted, involving a combination of poaching for ivory, human-wildlife conflict, and the loss of habitats due to human encroachment. Elephants are frequently killed in retaliation for crop damage, or they might wander into villages seeking water, where they encounter deadly traps or poison.</p>
+        </div>
+
+        <div class="content-section">
+            <h2 class="subheading">Conservation Efforts and Progress</h2>
+            <p>Conservation efforts aimed at protecting elephants have made considerable strides. In countries like Botswana and Kenya, strict anti-poaching laws and initiatives that promote human-wildlife cohabitation have led to elephant population growth. For example, Botswana’s elephants, which are protected by the government, are now flourishing. On the other hand, Kenya has implemented extensive anti-poaching measures, which have drastically reduced elephant poaching incidents.</p>
+            <p>International organizations, including the African Wildlife Foundation (AWF), Save the Elephants, and the World Wildlife Fund (WWF), are spearheading efforts to secure elephant populations. These organizations work on various fronts, from securing wildlife corridors to providing education and promoting sustainable eco-tourism to reduce human-elephant conflicts.</p>
+        </div>
+
+        <div class="content-section">
+            <h2 class="subheading">How You Can Help</h2>
+            <p>Although governments and international organizations are crucial in the fight to protect elephants, individuals can also contribute. Support conservation organizations by donating or volunteering. Educate others about the ivory trade and its devastating impact on elephant populations. Choose to support eco-friendly and ethical tourism practices, which ensure that elephants are treated with respect and their habitats are preserved.</p>
+            <p>Furthermore, always check the ethical standards of wildlife tours. Avoid any activities that exploit elephants or other wildlife, such as elephant rides or performances. By choosing responsible wildlife tourism, we can help fund the preservation of Africa's wildlife and ensure that elephants continue to roam freely in their natural habitats.</p>
+        </div>
+
+        
+    </div>
 </body>
-  </html>
+</html> 
